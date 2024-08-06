@@ -1,0 +1,8 @@
+body{
+    background-color: #16161a;
+    color: white;
+}
+.promotion-card{
+    background: rgb(22,22,147);
+background: linear-gradient(264deg, rgba(22,22,147,1) 0%, rgba(147,45,104,0.9976365546218487) 15%, rgba(0,99,255,1) 72%);
+}

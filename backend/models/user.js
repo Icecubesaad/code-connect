@@ -23,6 +23,10 @@ const userSchema = new Schema({
     type: Schema.Types.String,
     required: true,
   },
+  refreshToken:{
+    type:Schema.Types.String,
+    required:false
+  },
   bio: {
     type: Schema.Types.String,
     default: null,

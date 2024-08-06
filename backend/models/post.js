@@ -1,10 +1,10 @@
 const {Schema, default: mongoose} = require("mongoose");
 const postSchema = new Schema({
-  Text: {
+  text: {
     type: String,
     require: true,
   },
-  Likes: {
+  likes: {
     type: Number,
     default:0
   },
@@ -20,7 +20,12 @@ const postSchema = new Schema({
   totalComments:{
     type:Schema.Types.Number,
     default:0
-  }
+  },
+  tags:[
+    {
+      name:Schema.Types.String
+    }
+  ]
 });
 const Posts = mongoose.models.Post || mongoose.model("Post", postSchema);
 module.exports= Posts;
